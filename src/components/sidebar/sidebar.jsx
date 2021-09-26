@@ -11,35 +11,38 @@ import {
   FiArchive,
   FiCalendar,
   FiUser,
+  FiChevronLeft,
+  FiChevronRight,
 } from "react-icons/fi";
 const feather = require("feather-icons");
 
 function Sidebar(props) {
   const { open, hideNav, showNav } = props;
-  // feather.replace()
-  // const [open, setOpen] = useState(true)
-  // const [hideshowStr, setHideshowStr]=useState("Hide");
-  // function hideNav() {
-  //   // setHideshowStr("Show");
-  //   setOpen(false);
-  // }
-  // function showNav() {
-  //   // setHideshowStr("Show");
-  //   setOpen(true);
-  // }
   return (
     <>
       <div className={open ? "sidewrapper" : "sidewrapperClose"}>
-        <div
-          className="navbtn"
-          onClick={() => {
-            open ? hideNav() : showNav();
-          }}
-        >
-          {open && <span>Hide</span>}
-          {!open && <span>Show</span>}
-          {/* <button className="navbtn" onClick={() => hideNav()}> {{ open } ? "Hide" : "Show"} </button> */}
-        </div>
+
+
+        {open &&
+          <div className="navbtn">
+            <div className="arrowbtn" onClick={() => {
+              open ? hideNav() : showNav();
+            }}> <FiChevronLeft />Hide </div>
+          </div>
+        }
+
+
+
+
+
+        {!open &&
+          <div className="navbtn">
+            <div className="arrowbtnShow" onClick={() => {
+              open ? hideNav() : showNav();
+            }}><FiChevronRight />Show</div>
+          </div>
+        }
+
 
         {open && (
           <div className="sidemenu">
@@ -89,28 +92,27 @@ function Sidebar(props) {
         {!open && (
           <section className="sideMenuClose">
             <div className="menuitem">
-              <FiFileText />
+              <FiFileText size={20} />
             </div>
 
             <div className="menuitem">
-              <FiTruck />
+              <FiTruck size={20} />
             </div>
 
             <div className="menuitem">
-              <FiArchive />
+              <FiArchive size={20} />
             </div>
 
             <div className="menuitem">
-              <FiCalendar />
+              <FiCalendar size={20} />
             </div>
 
             <div className="menuitem">
-              <FiUser style={{ borderRadius: "50%", border: "1px solid" }} />
+              <FiUser style={{ borderRadius: "50%", border: "1px solid" }} size={20} />
             </div>
           </section>
         )}
 
-        {/* </div> */}
       </div>
     </>
   );

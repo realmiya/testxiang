@@ -26,8 +26,10 @@ function Navigation() {
       <div className="navigation">
         {/* <div> */}
         <Header open={open} hideNav={hideNav} showNav={showNav} />
+        <div>
         <Sidebar open={open} hideNav={hideNav} showNav={showNav} />
-        {/* <Content /> */}
+        <Content />
+        </div>
         {/* </div> */}
       </div>
     </>

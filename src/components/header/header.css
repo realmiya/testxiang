@@ -12,6 +12,7 @@
   align-items: center;
   /* align-items: center;
   justify-content: center; */
+  font-family: 'Manrope', sans-serif;
 }
 
 .userheader {
@@ -81,12 +82,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width:100%
 }
 
 .logosvg,
 .logoname {
   display: flex;
-  /* padding: 5px 5px; */
+  /* padding: 0 10px; */
   font-size: 12px;
 }
 
@@ -96,6 +98,9 @@
   align-items: center;
   justify-content: center;
 }
+/* .right{
+  width:100%
+} */
 
 .left {
   padding: 10px 0px 10px;
@@ -106,7 +111,7 @@
   /* height:69px; //不可以fix，否则不responsive */
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   margin: 12px 0;
   /* margin:5px; */
   border-right: 1px solid white;

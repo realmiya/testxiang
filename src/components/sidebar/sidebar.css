@@ -1,66 +1,36 @@
-.sidebar {
-  height: 100%;
-  width: 148px;
-  /* position: fixed; */
-  /* z-index: 1; */
-  /* top: 0; */
-  /* left: 0; */
-  background-color: #141414;
-  /* overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px; */
-  display: flex;
-  flex-direction: column;
-  margin: 0 14px 0 14px;
-  border-top: 1px solid white;
-}
-
-.sidebarClose {
-  height: 100%;
-  width: 100px;
-  /* position: fixed; */
-  /* z-index: 1; */
-  /* top: 0;
-  left: 0; */
-  background-color: #141414;
-  /* overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px; */
-  display: flex;
-  flex-direction: column;
-}
-
-.sidebar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
 
 .menuitem:hover {
-  color: #ffffff;
+  color: #FFFFFF;
 }
-.navbtn {
-  color: #898f9e;
-  border-radius: 5px;
-  background-color: #eceef0;
-  margin: 10px;
+.navbtn{
+  width:50px;
+  height:19px;
+  margin-right:-40px;
+  margin-top:30px;
+}
+.arrowbtn,
+.arrowbtnShow{
+  display:flex;
+  color: #898F9E;
+  border-radius: 10px;
+  background-color: #ECEEF0;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 100px;
+  /* margin-right: -20px; */
+  padding:2px 4px 3px 5px;
+
 }
 
-.logo {
+.logo{
   /* height:69px; //不可以fix，否则不responsive */
   display: flex;
   align-items: center;
   justify-content: center;
   /* border-bottom: 1px solid white; */
   /* border-right: 1px solid white; */
-  width: 171px;
+  width:171px;
   /* margin:3px; */
 }
 
@@ -71,28 +41,31 @@
   font-size: 12px;
   margin:3px;
 } */
-.menuitem {
-  color: #898f9e;
-  padding: 3px;
-  margin: 18px;
+.menuitem{
+  color:#898F9E;
+  padding:3px;
+  margin:18px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.menuicon {
-  size: 120px;
+.menuicon{
+
 
   display: flex;
 }
 
 .sidewrapper,
-.sidewrapperClose {
-  width: 171px;
-  background-color: black;
-  color: #898f9e;
-  height: 100%;
+.sidewrapperClose{
+  width:171px;
+  background-color:#141414;
+  color: #898F9E;
+  height:100%;
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
 }
 
-.sidewrapperClose {
-  width: 100px;
+.sidewrapperClose{
+  width:100px;
+
 }
